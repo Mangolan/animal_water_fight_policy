@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Animal Water Fight 개인정보 처리방침">
+  <title>개인정보 처리방침 | Animal Water Fight</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f8fb;
+      --surface: #ffffff;
+      --text: #16232d;
+      --muted: #5d6d78;
+      --line: #dbe7ed;
+      --primary: #087da1;
+      --primary-soft: #e6f7fc;
+      --warning: #fff4da;
+      --warning-line: #e8b84f;
+      --shadow: 0 18px 50px rgba(21, 65, 82, .10);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #09141a;
+        --surface: #101f27;
+        --text: #edf8fc;
+        --muted: #adc0ca;
+        --line: #29414c;
+        --primary: #55d7f4;
+        --primary-soft: #123540;
+        --warning: #392e16;
+        --warning-line: #d2a83e;
+        --shadow: 0 18px 50px rgba(0, 0, 0, .24);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top right, rgba(50, 200, 235, .13), transparent 32rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      word-break: keep-all;
+    }
+
+    a { color: var(--primary); }
+    a:hover { text-decoration-thickness: 2px; }
+
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0 80px;
+    }
+
+    .hero {
+      margin-bottom: 24px;
+      padding: clamp(28px, 6vw, 54px);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { line-height: 1.35; }
+    h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.35rem); letter-spacing: -.04em; }
+    h2 { margin: 0 0 14px; font-size: 1.35rem; letter-spacing: -.02em; }
+    h3 { margin: 24px 0 8px; font-size: 1.05rem; }
+
+    .summary { margin: 18px 0 0; color: var(--muted); font-size: 1.05rem; }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .notice {
+      margin: 0 0 24px;
+      padding: 18px 20px;
+      border: 1px solid var(--warning-line);
+      border-radius: 16px;
+      background: var(--warning);
+    }
+
+    .notice strong { display: block; margin-bottom: 4px; }
+    .notice p { margin: 0; }
+
+    nav, section {
+      margin-top: 18px;
+      padding: clamp(22px, 5vw, 38px);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--surface);
+    }
+
+    nav ol {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 30px;
+      margin: 0;
+      padding-left: 1.4rem;
+    }
+
+    nav a { text-decoration: none; }
+    p { margin: 10px 0; }
+    ul { padding-left: 1.35rem; }
+    li + li { margin-top: 6px; }
+
+    .table-scroll { overflow-x: auto; margin: 16px 0; }
+    table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: .94rem; }
+    th, td { padding: 13px 14px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: var(--primary-soft); }
+
+    .callout {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      background: var(--primary-soft);
+    }
+
+    .placeholder {
+      padding: 1px 5px;
+      border-radius: 5px;
+      background: var(--warning);
+      color: inherit;
+      font-weight: 800;
+    }
+
+    footer { padding: 28px 8px 0; color: var(--muted); text-align: center; font-size: .88rem; }
+
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 20px, 920px); padding-top: 20px; }
+      nav ol { grid-template-columns: 1fr; }
+      body { word-break: normal; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>개인정보 처리방침</h1>
+      <p class="summary">
+        Animal Water Fight(이하 “게임”)은 이용자의 개인정보를 중요하게 생각하며,
+        개인정보 보호법 등 관련 법령을 준수합니다.
+      </p>
+      <div class="meta">
+        <span>서비스명: Animal Water Fight</span>
+        <span>패키지명: com.proustudio.animal_water_fight</span>
+        <span>시행일: 2026년 8월 18일</span>
+      </div>
+    </header>
+
+    <aside class="notice" aria-label="안내사항">
+      <strong>안내</strong>
+      <p>
+        광고 방식이나 사용하는 SDK가 변경되면 실제 개인정보 처리 내용에 맞게 이 방침도 함께
+        수정됩니다.
+      </p>
+    </aside>
+
+    <nav aria-label="목차">
+      <h2>목차</h2>
+      <ol>
+        <li><a href="#purpose">처리 목적 및 항목</a></li>
+        <li><a href="#retention">보유 기간과 파기</a></li>
+        <li><a href="#third-party">제3자 서비스 및 국외 이전</a></li>
+        <li><a href="#automatic">자동 수집 정보와 거부 방법</a></li>
+        <li><a href="#rights">이용자의 권리</a></li>
+        <li><a href="#safety">안전성 확보 조치</a></li>
+        <li><a href="#children">아동의 개인정보</a></li>
+        <li><a href="#contact">개인정보 보호 문의</a></li>
+        <li><a href="#remedy">권익침해 구제</a></li>
+        <li><a href="#changes">방침 변경</a></li>
+      </ol>
+    </nav>
+
+    <section id="purpose">
+      <h2>1. 개인정보의 처리 목적 및 항목</h2>
+      <p>
+        운영자는 회원가입 기능을 제공하지 않으며 이름, 이메일 주소, 전화번호를 직접 입력받지
+        않습니다. 다만 광고 제공 과정에서 아래 정보가 자동으로 처리될 수 있습니다.
+      </p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>처리 항목</th>
+              <th>처리 목적</th>
+              <th>처리 방식</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>게임 진행 정보</td>
+              <td>잠금 해제된 최고 단계</td>
+              <td>게임 진행 상태 저장</td>
+              <td>이용자 기기에만 저장되며 운영자 서버로 전송되지 않음</td>
+            </tr>
+            <tr>
+              <td>광고 및 기기 정보</td>
+              <td>
+                IP 주소(대략적 위치 추정 가능), 광고 ID·앱 세트 ID 등 기기 또는 계정 식별자,
+                앱 실행·탭·광고 조회 등 이용 상호작용, 앱·광고 SDK의 진단 및 성능 정보
+              </td>
+              <td>광고 제공 및 표시, 광고 성과 측정·분석, 부정 이용 방지와 보안</td>
+              <td>Google Mobile Ads SDK가 자동 수집·전송</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="callout">
+        실제 처리 항목은 이용자의 기기 설정, 지역, 동의 상태, Google의 광고 설정에 따라 달라질 수
+        있습니다. 게임은 연락처, 사진, 카메라, 마이크 또는 정밀 위치 권한을 요청하지 않습니다.
+      </p>
+    </section>
+
+    <section id="retention">
+      <h2>2. 개인정보의 보유 기간과 파기</h2>
+      <ul>
+        <li>
+          게임 진행 정보는 앱이 설치된 기기에 보관됩니다. 앱 데이터 삭제 또는 앱 삭제 시
+          기기 운영체제의 정책에 따라 삭제됩니다.
+        </li>
+        <li>
+          Google이 광고 제공 과정에서 처리하는 정보의 보유 기간과 삭제 절차에는 Google의 정책이
+          적용됩니다. 자세한 내용은
+          <a href="https://policies.google.com/technologies/retention?hl=ko" rel="noopener noreferrer">
+            Google 데이터 보관 정책</a>에서 확인할 수 있습니다.
+        </li>
+        <li>
+          운영자가 개인정보를 직접 보유하게 되는 경우에는 처리 목적 달성 후 지체 없이 복구하기
+          어려운 방법으로 파기합니다. 관계 법령에 따라 보존할 필요가 있는 경우에는 해당 기간 동안
+          별도로 분리하여 보관합니다.
+        </li>
+      </ul>
+    </section>
+
+    <section id="third-party">
+      <h2>3. 제3자 서비스 이용 및 개인정보의 국외 이전</h2>
+      <p>
+        게임은 광고 제공을 위해 Google Mobile Ads(AdMob)를 사용합니다. 이에 따라 아래 정보가
+        네트워크를 통해 국외로 전송되어 Google에 의해 처리될 수 있습니다.
+      </p>
+      <div class="table-scroll">
+        <table>
+          <tbody>
+            <tr><th>이전받는 자</th><td>Google LLC 및 그 계열사</td></tr>
+            <tr><th>연락처</th><td><a href="https://support.google.com/policies/troubleshooter/7575787?hl=ko" rel="noopener noreferrer">Google 개인정보 보호 문의</a></td></tr>
+            <tr><th>이전 국가</th><td>미국을 포함하여 Google 또는 그 처리시설이 위치한 국가</td></tr>
+            <tr><th>이전 항목</th><td>IP 주소, 대략적 위치, 이용 상호작용, 진단 정보, 광고 ID·앱 세트 ID 등 기기 또는 계정 식별자</td></tr>
+            <tr><th>이전 목적</th><td>광고 제공·개인화, 광고 성과 측정과 분석, 부정 이용 방지 및 보안</td></tr>
+            <tr><th>이전 시점·방법</th><td>앱 실행 및 광고 요청·표시 시 암호화된 네트워크를 통해 전송</td></tr>
+            <tr><th>보유·이용 기간</th><td>Google의 개인정보 처리방침 및 데이터 보관 정책에 따른 기간</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        국외 이전을 원하지 않는 경우 아래 제4항의 방법으로 광고 식별자 사용을 제한하거나 앱을
+        삭제할 수 있습니다. 다만 필수적인 기술 정보의 전송이 제한되면 광고가 정상적으로 제공되지
+        않을 수 있습니다. Google의 처리에 관한 자세한 사항은
+        <a href="https://policies.google.com/privacy?hl=ko" rel="noopener noreferrer">Google 개인정보처리방침</a>과
+        <a href="https://policies.google.com/technologies/partner-sites?hl=ko" rel="noopener noreferrer">Google 서비스를 사용하는 사이트 및 앱의 정보 사용 방식</a>에서 확인할 수 있습니다.
+      </p>
+    </section>
+
+    <section id="automatic">
+      <h2>4. 자동 수집 정보와 거부 방법</h2>
+      <p>
+        Google Mobile Ads SDK는 광고 제공과 측정을 위해 광고 식별자 및 앱 이용 관련 정보를
+        자동으로 처리할 수 있습니다. 이용자는 기기 설정에서 광고 ID를 재설정·삭제하거나 맞춤형
+        광고를 제한할 수 있습니다.
+      </p>
+      <ul>
+        <li>Android: 설정 → 개인정보 보호 → 광고 → 광고 ID 삭제 또는 재설정</li>
+        <li>Google 광고 설정: <a href="https://myadcenter.google.com/" rel="noopener noreferrer">내 광고 센터</a></li>
+      </ul>
+      <p>기기 제조사와 Android 버전에 따라 메뉴 이름과 경로가 다를 수 있습니다.</p>
+    </section>
+
+    <section id="rights">
+      <h2>5. 이용자와 법정대리인의 권리 및 행사 방법</h2>
+      <p>
+        이용자는 자신의 개인정보에 대해 열람, 정정·삭제, 처리정지 및 동의 철회를 요구할 수
+        있습니다. 게임 진행 정보는 기기의 앱 데이터 삭제 기능으로 직접 삭제할 수 있습니다.
+        그 밖의 요청은 제8항의 이메일로 접수할 수 있으며, 운영자는 관련 법령이 정한 기간 안에
+        본인 확인 후 조치하고 결과를 안내합니다. 법정대리인은 필요한 경우 이용자를 대신하여
+        권리를 행사할 수 있습니다.
+      </p>
+    </section>
+
+    <section id="safety">
+      <h2>6. 개인정보의 안전성 확보 조치</h2>
+      <p>운영자는 개인정보의 안전한 처리를 위해 다음과 같은 조치를 취합니다.</p>
+      <ul>
+        <li>개인정보의 수집을 서비스 제공에 필요한 범위로 최소화</li>
+        <li>통신 구간 암호화가 적용된 제3자 SDK 사용</li>
+        <li>개인정보 접근 권한의 최소화 및 관련 SDK·구성의 주기적 점검</li>
+        <li>보안 업데이트와 취약점 대응</li>
+      </ul>
+    </section>
+
+    <section id="children">
+      <h2>7. 아동의 개인정보</h2>
+      <p>
+        게임은 이용자의 나이를 직접 수집하지 않습니다. 만 14세 미만 아동을 주된 대상으로
+        서비스하는 경우 운영자는 관련 법령과 앱 마켓의 가족 정책에 따라 법정대리인 동의, 연령에
+        적합한 광고 설정 등 필요한 보호조치를 별도로 적용합니다.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>8. 개인정보 보호책임자 및 문의처</h2>
+      <p>
+        운영자는 개인정보 관련 문의, 불만 처리 및 권리 행사를 담당하는 창구를 아래와 같이
+        운영합니다.
+      </p>
+      <div class="table-scroll">
+        <table>
+          <tbody>
+            <tr><th>운영자 / 개인정보 보호책임자</th><td>배은미</td></tr>
+            <tr><th>이메일</th><td><a href="mailto:74700599bem@gmail.com">74700599bem@gmail.com</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="remedy">
+      <h2>9. 권익침해 구제 방법</h2>
+      <p>
+        개인정보 침해에 관한 상담이나 피해 구제가 필요한 경우 다음 기관에 문의할 수 있습니다.
+      </p>
+      <ul>
+        <li><a href="https://privacy.kisa.or.kr/" rel="noopener noreferrer">개인정보침해 신고센터</a></li>
+        <li><a href="https://www.kopico.go.kr/" rel="noopener noreferrer">개인정보 분쟁조정위원회</a></li>
+        <li><a href="https://www.spo.go.kr/" rel="noopener noreferrer">대검찰청</a></li>
+        <li><a href="https://ecrm.police.go.kr/" rel="noopener noreferrer">경찰청 사이버범죄 신고시스템</a></li>
+      </ul>
+    </section>
+
+    <section id="changes">
+      <h2>10. 개인정보 처리방침의 변경</h2>
+      <p>
+        이 방침의 내용이 변경되는 경우 시행 전에 게임 내 공지 또는 배포 페이지를 통해 알립니다.
+        이용자 권리에 중대한 변경이 있는 경우에는 가능한 범위에서 별도로 알립니다.
+      </p>
+      <ul>
+        <li>공고일: 2026년 8월 18일</li>
+        <li>시행일: 2026년 8월 18일</li>
+      </ul>
+    </section>
+
+    <footer>
+      © 2026 배은미. Animal Water Fight.
+    </footer>
+  </main>
+</body>
+</html>
